@@ -21,6 +21,9 @@ import world from "../../Images/services/world.svg";
 //SEO Section
 import leftImg from "../../Images/seoSection/leftImg.png";
 //SEO Section
+//AboutUs Section
+import billyImage from "../../Images/AboutUs/Billy-59-1.png";
+//AboutUs Section
 export {
   // First Section
   logo,
@@ -47,4 +50,9 @@ export {
   //SEO Section
   leftImg,
   //SEO Section
+  // *********************
+  //AboutUs Section
+  billyImage,
+  //AboutUs Section
+  // *********************
 };
