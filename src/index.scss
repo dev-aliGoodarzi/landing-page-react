@@ -109,3 +109,16 @@
     }
   }
 }
+
+.status__custom {
+  height: 40vh;
+  .ourStatusInner__custom {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    span {
+      font : {
+        family: popinas-main !important;
+      }
+    }
+  }
+}

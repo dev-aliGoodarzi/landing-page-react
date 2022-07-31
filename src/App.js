@@ -7,6 +7,7 @@ import TrustedUsers from './Compunents/TrustedUsers/TrustedUsers';
 import Services from './Compunents/Services/Services';
 import AboutSEO from './Compunents/AboutSEO/AboutSEO';
 import AboutUs from './Compunents/AboutUs/AboutUs';
+import OurStatus from './Compunents/OurStatus/OurStatus';
 // Components
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <Services />
     <AboutSEO />
     <AboutUs />
+    <OurStatus />
   </>
 }
 export default App;
