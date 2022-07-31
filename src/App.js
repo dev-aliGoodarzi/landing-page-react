@@ -7,8 +7,8 @@ import LandingContainer from './Compunents/LandingContainer/LandingContainer';
 // Components
 
 const App = () => {
-    return <>
-        <LandingContainer />
-    </>
+  return <>
+    <LandingContainer />
+  </>
 }
 export default App;
