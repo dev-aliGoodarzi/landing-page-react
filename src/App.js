@@ -1,11 +1,11 @@
 // React 
 import React from 'react'
 // React 
-
 // Components
 import LandingContainer from './Compunents/LandingContainer/LandingContainer';
-import Services from './Compunents/Services/Services';
 import TrustedUsers from './Compunents/TrustedUsers/TrustedUsers';
+import Services from './Compunents/Services/Services';
+import AboutSEO from './Compunents/AboutSEO/AboutSEO';
 // Components
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
     <LandingContainer />
     <TrustedUsers />
     <Services />
+    <AboutSEO />
   </>
 }
 export default App;

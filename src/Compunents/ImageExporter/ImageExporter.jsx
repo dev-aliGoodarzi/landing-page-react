@@ -18,7 +18,9 @@ import group from "../../Images/services/Group.png";
 import search from "../../Images/services/search.svg";
 import world from "../../Images/services/world.svg";
 // Services Images
-
+//SEO Section
+import leftImg from "../../Images/seoSection/leftImg.png";
+//SEO Section
 export {
   // First Section
   logo,
@@ -42,4 +44,7 @@ export {
   search,
   world,
   // Services Images
+  //SEO Section
+  leftImg,
+  //SEO Section
 };
