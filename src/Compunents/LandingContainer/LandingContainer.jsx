@@ -9,7 +9,7 @@ const LandingContainer = () => {
         <img src={bgTop} alt="" />
       </div>
       <Header />
-      <div className="bottom__container w-screen flex flex-row align-cetner justify-between p-10 ">
+      <div className="bottom__container w-full flex flex-row align-cetner justify-between p-10 ">
         <div className="left w-1/2 flex flex-col align-start justify-start">
           <h1 className={`text-white `}>
             We are The Brilliants In

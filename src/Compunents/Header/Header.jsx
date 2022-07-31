@@ -31,7 +31,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className=" w-screen  flex flex-row justify-between align-center border-box p-5 pl-10 pr-10 header__custom">
+    <div className=" w-full  flex flex-row justify-between align-center border-box p-5 pl-10 pr-10 header__custom">
       <div className="w-1/8 flex flex-row justify-between items-center logo__custom">
         <img src={logo} alt="" />
         <span>Digi Marketers</span>
@@ -50,7 +50,7 @@ const Header = () => {
             );
           })}
         </div>
-        <img src={iconSearch} className={`ml-64`} alt=""></img>
+        <img src={iconSearch} className={`ml-64`} alt="" />
       </div>
     </div>
   );

@@ -70,4 +70,28 @@
 .main-container__custom .bottom__container .left button {
   border-radius: 5px;
 }
+
+.main-container__custom .bottom__container .right {
+  position: relative;
+  bottom: 5%;
+}
+
+.trustedUsersContainer {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trustedUsersContainer .main__custom {
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
 /*# sourceMappingURL=index.css.map */

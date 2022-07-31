@@ -67,6 +67,19 @@
       }
     }
     .right {
+      position: relative;
+      bottom: 5%;
     }
+  }
+}
+
+.trustedUsersContainer {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .main__custom {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
   }
 }
