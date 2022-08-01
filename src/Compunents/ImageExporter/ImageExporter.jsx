@@ -24,6 +24,13 @@ import leftImg from "../../Images/seoSection/leftImg.png";
 //AboutUs Section
 import billyImage from "../../Images/AboutUs/Billy-59-1.png";
 //AboutUs Section
+// WhyCooseUs Section
+import whyChooseUsTopLeftImg from "../../Images/WhyChooseUs/top-left.png";
+import whyChooseUsTopRightImg from "../../Images/WhyChooseUs/top-right.png";
+import whyChooseUsbottomLeftImg from "../../Images/WhyChooseUs/bottom-left.png";
+import whyChooseUsbottomRightImg from "../../Images/WhyChooseUs/bottom-right.png";
+
+// WhyCooseUs Section
 export {
   // First Section
   logo,
@@ -54,5 +61,12 @@ export {
   //AboutUs Section
   billyImage,
   //AboutUs Section
+  // *********************
+  // WhyCooseUs Section
+  whyChooseUsTopLeftImg,
+  whyChooseUsTopRightImg,
+  whyChooseUsbottomLeftImg,
+  whyChooseUsbottomRightImg,
+  // WhyCooseUs Section
   // *********************
 };

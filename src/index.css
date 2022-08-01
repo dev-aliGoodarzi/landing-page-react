@@ -8,6 +8,14 @@
   src: url("Fonts/Poppins-Regular.ttf");
 }
 
+.main-font {
+  font-family: Balsamiq-main;
+}
+
+.popinas-main {
+  font-family: popinas-main !important;
+}
+
 .main-container__custom {
   position: relative;
   height: 80vh;
@@ -118,12 +126,8 @@
   border-radius: 5px;
 }
 
-.aboutSEO__Custom .custom__innerItems p {
-  font-family: popinas-main !important;
-}
-
 .status__custom {
-  height: 40vh;
+  height: 50vh;
 }
 
 .status__custom .ourStatusInner__custom {
@@ -132,7 +136,13 @@
   border-radius: 5px;
 }
 
-.status__custom .ourStatusInner__custom span {
-  font-family: popinas-main !important;
+.whyChooseUs__Custom .innerContainer__custom .left ul li::marker {
+  color: #cb0f4c;
+}
+
+.whyChooseUs__Custom .cart__custom {
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.08);
 }
 /*# sourceMappingURL=index.css.map */

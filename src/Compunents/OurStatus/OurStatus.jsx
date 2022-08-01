@@ -28,18 +28,18 @@ const OurStatus = () => {
     },
   ];
   return (
-    <div className="w-full status__custom flex flex-row items-center justify-center ">
-      <div className="w-5/6 h-full flex flex-row items-center justify-between p-20 pl-15 pr-15 ourStatusInner__custom">
+    <div className="w-full status__custom flex flex-row items-center justify-center status__custom">
+      <div className="w-5/6 h-1/2 flex flex-row items-center justify-between p-20 ourStatusInner__custom">
         {status.map((item) => {
           return (
             <div
               key={item.id}
               className="w-1/5 h-full flex flex-col items-center justify-evenly "
             >
-              <span className="text-7xl" style={{ color: "#CB0F4C" }}>
+              <span className="text-7xl main-font" style={{ color: "#CB0F4C" }}>
                 {item.number} {item.hasPlus && "+"}
               </span>
-              <span className="box-border pt-5">{item.name}</span>
+              <span className="box-border pt-5 main-font">{item.name}</span>
             </div>
           );
         })}

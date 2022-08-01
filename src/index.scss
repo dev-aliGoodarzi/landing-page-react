@@ -6,6 +6,16 @@
   font-family: popinas-main;
   src: url("Fonts/Poppins-Regular.ttf");
 }
+.main-font {
+  font : {
+    family: Balsamiq-main;
+  }
+}
+.popinas-main {
+  font : {
+    family: popinas-main !important;
+  }
+}
 .main-container__custom {
   position: relative;
   height: 80vh;
@@ -102,23 +112,31 @@
     height: 100%;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    p {
-      font : {
-        family: popinas-main !important;
-      }
-    }
   }
 }
 
 .status__custom {
-  height: 40vh;
+  height: 50vh;
   .ourStatusInner__custom {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    span {
-      font : {
-        family: popinas-main !important;
+  }
+}
+
+.whyChooseUs__Custom {
+  .innerContainer__custom {
+    .left {
+      ul {
+        li::marker {
+          color: #cb0f4c;
+        }
       }
     }
+    .right {
+    }
+  }
+  .cart__custom {
+    background: #ffffff;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.08);
   }
 }

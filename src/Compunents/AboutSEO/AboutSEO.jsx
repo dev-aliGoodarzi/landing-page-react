@@ -12,12 +12,12 @@ const AboutSEO = () => {
           <h1 className=" w-full text-left text-5xl">
             Search Engine Optimization
           </h1>
-          <p className="text-base w-5/6">
+          <p className="text-base w-5/6 popinas-main">
             Sed in vel egestas ac facilisis adipiscing sit pretium tortor.
             <br />
             Donec vivamus in magna lorem imperdiet duis bibendum condimentum.
           </p>
-          <p className="text-base">
+          <p className="text-base popinas-main">
             Ultrices justo, ut eleifend sed platea. Mauris risus est nec
             <br />
             sed tempor aenean.
