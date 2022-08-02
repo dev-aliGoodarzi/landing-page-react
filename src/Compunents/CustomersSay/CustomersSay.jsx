@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   testimonialImage1,
   testimonialImage2,
@@ -10,6 +10,7 @@ import {
 } from "../ImageExporter/ImageExporter";
 
 const CustomersSay = () => {
+  const [currentUserImg, setCurrentUserImg] = useState(testimonialImage1);
   const imagesArray = [
     {
       id: "testimonial-Img-1",
@@ -48,7 +49,12 @@ const CustomersSay = () => {
           <br />
           quam. Viverra placerat morbi ut imperdiet.
         </p>
-        <img className="w-52 h-52 mt-24" src={testimonialImage1} alt="" />
+        <img
+          className="w-52 h-52 mt-24"
+          src={currentUserImg}
+          alt=""
+          onClick={() => setCurrentUserImg(testimonialImage1)}
+        />
         <p className="text-2xl font-bold text-center pt-10">
           Senectus et scelerisque convallis at sollicitudin tellus volutpat
           quam. Ipsum bibendum iaculis gravida
@@ -68,6 +74,7 @@ const CustomersSay = () => {
                 key={item.id}
                 src={item.image}
                 alt={item.id}
+                onClick={() => setCurrentUserImg(item.image)}
               />
             );
           })}
