@@ -4,7 +4,7 @@ import { leftImg } from "../ImageExporter/ImageExporter";
 const AboutSEO = () => {
   return (
     <div className="w-full flex flex-row items-center p-32 justify-center aboutSEO__Custom ">
-      <div className="w-full  flex flex-row  items-center justify-between custom__innerItems">
+      <div className="w-full h-full flex flex-row  items-center justify-between custom__innerItems">
         <div className="left pl-5 h-full flex flex-col items-center justify-center w-1/3">
           <img src={leftImg} alt="" />
         </div>

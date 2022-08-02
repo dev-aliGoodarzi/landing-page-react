@@ -10,6 +10,7 @@ import AboutUs from './Compunents/AboutUs/AboutUs';
 import OurStatus from './Compunents/OurStatus/OurStatus';
 import WhyChoooseUs from './Compunents/WhyChoooseUs/WhyChoooseUs';
 import CustomersSay from './Compunents/CustomersSay/CustomersSay';
+import Blog from './Compunents/Blog/Blog';
 // Components
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
     <OurStatus />
     <WhyChoooseUs />
     <CustomersSay />
+    <Blog />
   </>
 }
 export default App;

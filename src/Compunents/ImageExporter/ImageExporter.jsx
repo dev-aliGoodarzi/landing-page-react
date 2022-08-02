@@ -1,3 +1,7 @@
+// *** Shapes ***
+import arrow from "../../Images/Shapes/Arrow.png";
+import share from "../../Images/Shapes/Share.png";
+// *** Shapes ***
 // First Section
 import logo from "../../Images/LandingPage/logo.png";
 import bgTop from "../../Images/LandingPage/bg-red.png";
@@ -39,7 +43,14 @@ import testimonialImage5 from "../../Images/Testimonial/Ellipse 6.png";
 import testimonialImage6 from "../../Images/Testimonial/Ellipse 7.png";
 import testimonialImage7 from "../../Images/Testimonial/Ellipse 8.png";
 // TestimonialSection
+// Slides Images
+import slide1Img from "../../Images/Slides/slide1.png";
+import slide2Img from "../../Images/Slides/slide2.png";
+import slide3Img from "../../Images/Slides/slide3.png";
+// Slides Images
 export {
+  arrow,
+  share,
   // First Section
   logo,
   bgTop,
@@ -84,5 +95,11 @@ export {
   testimonialImage5,
   testimonialImage6,
   testimonialImage7,
+  // *********************
+  // Slides Images
+  slide1Img,
+  slide2Img,
+  slide3Img,
+  // Slides Images
   // *********************
 };
