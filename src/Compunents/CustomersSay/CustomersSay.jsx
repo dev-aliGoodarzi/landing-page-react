@@ -59,7 +59,7 @@ const CustomersSay = () => {
         <p className="pt-8 text-3xl" style={{ color: "#CB0F4C" }}>
           Keya Akter
         </p>
-        <p className="text-2xl mt-2.5 text-2xl">Customer</p>
+        <p className="text-2xl mt-2.5 ">Customer</p>
         <div className="w-full px-80 mt-24 imageContainer flex flex-row items-center justify-between">
           {imagesArray.map((item) => {
             return (
@@ -78,4 +78,3 @@ const CustomersSay = () => {
 };
 
 export default CustomersSay;
-

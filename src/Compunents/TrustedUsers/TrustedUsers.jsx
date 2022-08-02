@@ -43,9 +43,9 @@ const TrustedUsers = () => {
   ];
   return (
     <div
-      className={` flex flex-col items-center justify-center trustedUsersContainer`}
+      className={`w-full flex flex-col items-center justify-center trustedUsersContainer`}
     >
-      <div className="container h-1/3 flex flex-col items-center justify-evenly main__custom">
+      <div className=" container h-1/3 flex flex-col items-center justify-evenly main__custom">
         <h2 className={`font-bold`}>
           trusted by over <span style={{ color: "#CB0F4C" }}>13,041+</span>{" "}
           happy customers, including
