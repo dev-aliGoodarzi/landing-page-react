@@ -5,7 +5,7 @@ const AboutSEO = () => {
   return (
     <div className="w-full flex flex-row items-center p-32 justify-center aboutSEO__Custom ">
       <div className="w-full  flex flex-row  items-center justify-between custom__innerItems">
-        <div className="left h-full flex flex-col items-center justify-center w-1/3">
+        <div className="left pl-5 h-full flex flex-col items-center justify-center w-1/3">
           <img src={leftImg} alt="" />
         </div>
         <div className="right h-full w-3/6 flex flex-col items-start justify-between pt-16 pb-16">
