@@ -29,8 +29,16 @@ import whyChooseUsTopLeftImg from "../../Images/WhyChooseUs/top-left.png";
 import whyChooseUsTopRightImg from "../../Images/WhyChooseUs/top-right.png";
 import whyChooseUsbottomLeftImg from "../../Images/WhyChooseUs/bottom-left.png";
 import whyChooseUsbottomRightImg from "../../Images/WhyChooseUs/bottom-right.png";
-
 // WhyCooseUs Section
+// TestimonialSection
+import testimonialImage1 from "../../Images/Testimonial/Ellipse 2.png";
+import testimonialImage2 from "../../Images/Testimonial/Ellipse 3.png";
+import testimonialImage3 from "../../Images/Testimonial/Ellipse 4.png";
+import testimonialImage4 from "../../Images/Testimonial/Ellipse 5.png";
+import testimonialImage5 from "../../Images/Testimonial/Ellipse 6.png";
+import testimonialImage6 from "../../Images/Testimonial/Ellipse 7.png";
+import testimonialImage7 from "../../Images/Testimonial/Ellipse 8.png";
+// TestimonialSection
 export {
   // First Section
   logo,
@@ -68,5 +76,13 @@ export {
   whyChooseUsbottomLeftImg,
   whyChooseUsbottomRightImg,
   // WhyCooseUs Section
+  // *********************
+  testimonialImage1,
+  testimonialImage2,
+  testimonialImage3,
+  testimonialImage4,
+  testimonialImage5,
+  testimonialImage6,
+  testimonialImage7,
   // *********************
 };

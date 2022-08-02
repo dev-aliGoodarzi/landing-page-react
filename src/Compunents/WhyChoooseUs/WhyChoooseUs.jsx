@@ -14,7 +14,7 @@ const WhyChoooseUs = () => {
         id: "card--top-1",
         image: whyChooseUsTopLeftImg,
         name: `Professional & Certified Company`,
-        aboutName: "Ornare dictum risus cursus amet maurisasfa",
+        aboutName: `Ornare dictum risus cursus amet maurisasfa`,
       },
       {
         id: "card--top-2",
@@ -45,7 +45,7 @@ const WhyChoooseUs = () => {
     <div className="w-full p-20 flex items-center justify-center whyChooseUs__Custom ">
       <div className="w-full h-full innerContainer flex flex-row ites-center justify-center innerContainer__custom px-20">
         <div className="left w-1/2 h-full flex flex-col items-start justify-start">
-          <p className="text-lg " style={{ color: "#CB0F4C" }}>
+          <p className="text-xl " style={{ color: "#CB0F4C" }}>
             WHY CHOOSE US
           </p>
           <h1 className="text-5xl font-bold mt-5 main-font">

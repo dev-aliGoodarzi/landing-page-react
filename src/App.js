@@ -9,6 +9,7 @@ import AboutSEO from './Compunents/AboutSEO/AboutSEO';
 import AboutUs from './Compunents/AboutUs/AboutUs';
 import OurStatus from './Compunents/OurStatus/OurStatus';
 import WhyChoooseUs from './Compunents/WhyChoooseUs/WhyChoooseUs';
+import CustomersSay from './Compunents/CustomersSay/CustomersSay';
 // Components
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     <AboutUs />
     <OurStatus />
     <WhyChoooseUs />
+    <CustomersSay />
   </>
 }
 export default App;
