@@ -11,6 +11,7 @@ import OurStatus from './Compunents/OurStatus/OurStatus';
 import WhyChoooseUs from './Compunents/WhyChoooseUs/WhyChoooseUs';
 import CustomersSay from './Compunents/CustomersSay/CustomersSay';
 import Blog from './Compunents/Blog/Blog';
+import Footer from './Compunents/Footer/Footer';
 // Components
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
     <WhyChoooseUs />
     <CustomersSay />
     <Blog />
+    <Footer />
   </>
 }
 export default App;

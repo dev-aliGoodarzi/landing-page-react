@@ -5,20 +5,24 @@
   font-family: Balsamiq-main;
   src: url("Fonts/BalsamiqSans-Regular.ttf");
 }
+
 @font-face {
   font-family: popinas-main;
   src: url("Fonts/Poppins-Regular.ttf");
 }
+
 .main-font {
   font : {
     family: Balsamiq-main;
   }
 }
+
 .popinas-main {
   font : {
     family: popinas-main !important;
   }
 }
+
 .main-container__custom {
   position: relative;
   height: 80vh;
@@ -157,6 +161,24 @@
       left: none;
       width: 1rem !important;
       height: 1rem !important;
+    }
+  }
+}
+
+.footer {
+  height: 80vh;
+  .orderHelper {
+    position: absolute;
+    top: -17%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 99;
+  }
+  .top {
+    background-color: #191234;
+    #leftSectionTag__P {
+      line-height: 47.52px;
     }
   }
 }

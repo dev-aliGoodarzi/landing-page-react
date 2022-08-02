@@ -48,6 +48,13 @@ import slide1Img from "../../Images/Slides/slide1.png";
 import slide2Img from "../../Images/Slides/slide2.png";
 import slide3Img from "../../Images/Slides/slide3.png";
 // Slides Images
+// Footer
+import facebookIcon from "../../Images/Footer/facebook.png";
+import youtubeIcon from "../../Images/Footer/youtube.png";
+import twitterIcon from "../../Images/Footer/twitter.png";
+import googleIcon from "../../Images/Footer/google.png";
+import sendIcon from "../../Images/Footer/send-icon.png";
+// Footer
 export {
   arrow,
   share,
@@ -102,4 +109,11 @@ export {
   slide3Img,
   // Slides Images
   // *********************
+  // Footer
+  facebookIcon,
+  youtubeIcon,
+  twitterIcon,
+  googleIcon,
+  sendIcon,
+  // Footer
 };
