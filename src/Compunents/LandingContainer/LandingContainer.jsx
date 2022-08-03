@@ -18,11 +18,13 @@ const LandingContainer = () => {
             <br />
             Marketing
           </h1>
-          <p className={`text-white mt-5`}>Book your 30-minute free strategy call</p>
-          <button className={`h-12 w-32 bg-white mt-10 `}>Book Now</button>
+          <p className={`text-white mt-5`}>
+            Book your 30-minute free strategy call
+          </p>
+          <button className={`h-16 w-64 bg-white mt-10 `}>Book Now</button>
         </div>
         <div className="right w-1/2 flex flex-row align-start justify-start ">
-          <img src={billyImg} alt="" className={`w-5/6`} />
+          <img src={billyImg} alt="" className={`w-full`} />
         </div>
       </div>
     </div>

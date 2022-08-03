@@ -21,7 +21,7 @@ const Footer = () => {
           BOOK NOW
         </button>
       </div>
-      <div className="top w-full h-5/6 flex flex-row items-end justify-between px-36 pb-12">
+      <div className="top w-full h-full flex flex-row items-end justify-between px-36 pb-20">
         <DigiMarketers />
         <Contact />
         <ViewerGuides />
@@ -29,7 +29,7 @@ const Footer = () => {
         <NewsLetter />
       </div>
       <div
-        className="bottom h-1/6 w-full"
+        className="bottom h-24 w-full"
         style={{ background: "#CB0F4C" }}
       ></div>
     </div>

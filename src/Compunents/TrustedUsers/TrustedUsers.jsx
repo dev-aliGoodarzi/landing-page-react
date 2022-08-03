@@ -43,19 +43,19 @@ const TrustedUsers = () => {
   ];
   return (
     <div
-      className={`w-full flex flex-col items-center justify-center trustedUsersContainer`}
+      className={`w-full  flex flex-col  items-center justify-center trustedUsersContainer px-28`}
     >
-      <div className=" container h-1/3 flex flex-col items-center justify-evenly main__custom">
+      <div className="w-full h-1/3 flex flex-col items-center justify-evenly main__custom">
         <h2 className={`font-bold`}>
           trusted by over <span style={{ color: "#CB0F4C" }}>13,041+</span>{" "}
           happy customers, including
         </h2>
-        <div className="trustedUserImagesAndPics w-full flex flex-row items-center justify-evenly">
+        <div className="trustedUserImagesAndPics w-full flex flex-row items-center justify-between px-24">
           {trustedUsersList.map((item) => {
             return (
               <div
                 key={item.id}
-                className={` w-1/6 flex flex-row items-center justify-start `}
+                className={`flex flex-row items-center justify-start `}
               >
                 <img src={item.imgUrl} className={``} alt="" />
                 <span

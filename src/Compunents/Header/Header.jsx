@@ -50,7 +50,7 @@ const Header = () => {
             );
           })}
         </div>
-        <img src={iconSearch} className={`ml-64`} alt="" />
+        <img src={iconSearch} className={`ml-24`} alt="" />
       </div>
     </div>
   );
