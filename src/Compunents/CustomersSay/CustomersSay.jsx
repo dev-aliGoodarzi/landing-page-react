@@ -10,7 +10,9 @@ import {
 } from "../ImageExporter/ImageExporter";
 
 const CustomersSay = () => {
-  const [currentUserImg, setCurrentUserImg] = useState(testimonialImage1);
+  const [beforeImage, setBeforeImage] = useState(testimonialImage1);
+  const [currentUserImg, setCurrentUserImg] = useState("");
+  const customerImgRef = React.createRef();
   const imagesArray = [
     {
       id: "testimonial-Img-1",
@@ -50,10 +52,11 @@ const CustomersSay = () => {
           quam. Viverra placerat morbi ut imperdiet.
         </p>
         <img
+          ref={customerImgRef}
           className="w-52 h-52 mt-24"
-          src={currentUserImg}
+          src={beforeImage}
           alt=""
-          onClick={() => setCurrentUserImg(testimonialImage1)}
+          onClick={(e) => console.log(e.currentTarget.src)}
         />
         <p className="text-2xl font-bold text-center pt-10">
           Senectus et scelerisque convallis at sollicitudin tellus volutpat
@@ -74,7 +77,11 @@ const CustomersSay = () => {
                 key={item.id}
                 src={item.image}
                 alt={item.id}
-                onClick={() => setCurrentUserImg(item.image)}
+                onClick={(e) => {
+                  setBeforeImage(e.currentTarget.src);
+                  e.currentTarget.src = beforeImage;
+                  setCurrentUserImg(beforeImage);
+                }}
               />
             );
           })}

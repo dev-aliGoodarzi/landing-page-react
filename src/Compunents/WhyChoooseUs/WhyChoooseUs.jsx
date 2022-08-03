@@ -5,7 +5,7 @@ import {
   whyChooseUsTopLeftImg,
   whyChooseUsTopRightImg,
 } from "../ImageExporter/ImageExporter";
-import WhyChooseUs__Cart from "./WhyChooseUs__Cart";
+import WhyChooseUsCart from "./WhyChooseUsCart";
 
 const WhyChoooseUs = () => {
   const cards = {
@@ -15,6 +15,7 @@ const WhyChoooseUs = () => {
         image: whyChooseUsTopLeftImg,
         name: `Professional & Certified Company`,
         aboutName: `Ornare dictum risus cursus amet maurisasfa`,
+        hasMarginTop: false,
       },
       {
         id: "card--top-2",
@@ -22,6 +23,7 @@ const WhyChoooseUs = () => {
         name: `Business & Product
         Concept too`,
         aboutName: "Ornare dictum risus cursus amet maurisasfa",
+        hasMarginTop: true,
       },
     ],
     bottom: [
@@ -31,6 +33,7 @@ const WhyChoooseUs = () => {
         name: `Pixel & Perfect
         Design`,
         aboutName: "Ornare dictum risus cursus amet maurisasfa",
+        hasMarginTop: false,
       },
       {
         id: "card--bottom-2",
@@ -38,6 +41,7 @@ const WhyChoooseUs = () => {
         name: `International Good
         Relationship`,
         aboutName: "Ornare dictum risus cursus amet maurisasfa",
+        hasMarginTop: true,
       },
     ],
   };
@@ -84,14 +88,14 @@ const WhyChoooseUs = () => {
           <div className="top w-full h-1/2 flex flex-row items-center justify-between">
             {cards.top.map((item) => {
               return (
-                <WhyChooseUs__Cart item={item} pic={item.image} key={item.id} />
+                <WhyChooseUsCart item={item} pic={item.image} key={item.id} />
               );
             })}
           </div>
           <div className="bottom w-full h-1/2 flex flex-row items-center justify-between">
             {cards.bottom.map((item) => {
               return (
-                <WhyChooseUs__Cart item={item} pic={item.image} key={item.id} />
+                <WhyChooseUsCart item={item} pic={item.image} key={item.id} />
               );
             })}
           </div>
