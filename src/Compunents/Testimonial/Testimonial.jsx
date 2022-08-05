@@ -9,9 +9,9 @@ import {
   testimonialImage7,
 } from "../ImageExporter/ImageExporter";
 
-const CustomersSay = () => {
+const Testimonial = () => {
   const [beforeImage, setBeforeImage] = useState(testimonialImage1);
-  const [currentUserImg, setCurrentUserImg] = useState("");
+  const [, setCurrentUserImg] = useState("");
   const customerImgRef = React.createRef();
   const imagesArray = [
     {
@@ -91,4 +91,4 @@ const CustomersSay = () => {
   );
 };
 
-export default CustomersSay;
+export default Testimonial;

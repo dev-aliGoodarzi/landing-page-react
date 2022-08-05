@@ -84,8 +84,10 @@ const Blog = () => {
       bgImg: slide3Img,
     },
   ];
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
   return (
-    <div className="w-full h-full flex flex-col items-center justify-between p-20 blog__mainContainer__custom">
+    <div className="w-full h-full flex flex-col items-center justify-between p-20 blog__mainContainer__custom relative">
       <p className="text-3xl" style={{ color: "#CB0F4C" }}>
         Blog
       </p>
@@ -98,17 +100,16 @@ const Blog = () => {
         <br />
         volutpa quam. Viverra placerat morbi ut imperdiet.
       </p>
+
       <Swiper
         modules={[Pagination]}
         spaceBetween={40}
         slidesPerView={3}
         initialSlide={1}
-        centeredSlides={true}
         pagination={{
           clickable: true,
+          el: ".swiper-pagination",
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         className="w-full h-full mt-20"
       >
         {slides.map((item) => {
@@ -119,7 +120,7 @@ const Blog = () => {
           );
         })}
       </Swiper>
-      <div className="swiper-pagination">PAGINATION HERE</div>
+      <div className="swiper-pagination"></div>
     </div>
   );
 };

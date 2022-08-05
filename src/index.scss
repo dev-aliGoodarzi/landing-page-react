@@ -164,7 +164,32 @@
     }
   }
 }
-
+.blog__mainContainer__custom {
+  .swiper-pagination {
+    bottom: -50px;
+    span {
+      width: 1rem;
+      height: 1rem;
+      display: inline flow-root list-item;
+      &::marker {
+        display: inline flow-root list-item !important;
+        width: 12px !important;
+        height: 12px !important;
+        background: #c4c4c4 !important;
+        color: #c4c4c4;
+      }
+    }
+    span.swiper-pagination-bullet-active {
+      &::marker {
+        display: inline flow-root list-item !important;
+        width: 16px !important ;
+        height: 16px !important;
+        background-color: red !important;
+        color: red;
+      }
+    }
+  }
+}
 .footer {
   height: 80vh;
   .orderHelper {
