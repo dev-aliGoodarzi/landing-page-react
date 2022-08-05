@@ -43,19 +43,33 @@ const TrustedUsers = () => {
   ];
   return (
     <div
-      className={`w-full  flex flex-col  items-center justify-center trustedUsersContainer px-28`}
+      className={`
+      2xl:w-full  2xl:flex flex-col  2xl:items-center 2xl:justify-center 2xl:trustedUsersContainer 2xl:px-28
+      
+      `}
     >
-      <div className="w-full h-1/3 flex flex-col items-center justify-evenly main__custom">
-        <h2 className={`font-bold`}>
+      <div
+        className="
+      flex flex-col items-center justify-center
+      2xl:w-full 2xl:h-1/3 2xl:flex 2xl:flex-col 2xl:items-center 2xl:justify-evenly main__custom"
+      >
+        <h2
+          className={`font-bold ${
+            window.innerWidth < 450 && "px-3 text-center text-xl"
+          }`}
+        >
           trusted by over <span style={{ color: "#CB0F4C" }}>13,041+</span>{" "}
           happy customers, including
         </h2>
-        <div className="trustedUserImagesAndPics w-full flex flex-row items-center justify-between px-24">
+        <div className="trustedUserImagesAndPics 2xl:w-full 2xl:flex flex-row 2xl:items-center justify-between px-24">
           {trustedUsersList.map((item) => {
             return (
               <div
                 key={item.id}
-                className={`flex flex-row items-center justify-start `}
+                className={`flex flex-row items-center justify-start ${
+                  window.innerWidth < 450 &&
+                  "w-full justify-start items-start  pt-5"
+                }`}
               >
                 <img src={item.imgUrl} className={``} alt="" />
                 <span

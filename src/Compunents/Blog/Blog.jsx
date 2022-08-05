@@ -84,8 +84,6 @@ const Blog = () => {
       bgImg: slide3Img,
     },
   ];
-  const navigationPrevRef = React.useRef(null);
-  const navigationNextRef = React.useRef(null);
   return (
     <div className="w-full h-full flex flex-col items-center justify-between p-20 blog__mainContainer__custom relative">
       <p className="text-3xl" style={{ color: "#CB0F4C" }}>
