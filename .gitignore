@@ -4,6 +4,8 @@
 /node_modules
 /.idea
 /idea
+/.vscode
+/vscode
 /.pnp
 .pnp.js
 
