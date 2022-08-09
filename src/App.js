@@ -20,28 +20,29 @@ import Footer from "./Compunents/Footer/Footer";
 
 // Images
 import { testimonialImage1 } from "./Compunents/ImageExporter/ImageExporter";
+import { StateContext } from "./Contexts/StateContext";
 // Images
 
 const App = () => {
   // const [beforeImage, setBeforeImage] = useState(testimonialImage1);
   // const [, setCurrentUserImg] = useState("");
 
-  const reducer = (state, action) => {
-    if (action.type === "change") {
-      return {
-        ...state,
-        topImage: action.imageSrc,
-        currentUserImage: action.imageSrc,
-      };
-    } else {
-      return { state };
-    }
-  };
+  // const reducer = (state, action) => {
+  //   if (action.type === "change") {
+  //     return {
+  //       ...state,
+  //       topImage: action.imageSrc,
+  //       currentUserImage: action.imageSrc,
+  //     };
+  //   } else {
+  //     return { state };
+  //   }
+  // };
 
-  const [state, dispach] = useReducer(reducer, {
-    topImage: testimonialImage1,
-    currentUserImage: "",
-  });
+  // const [state, dispach] = useReducer(reducer, {
+  //   topImage: testimonialImage1,
+  //   currentUserImage: "",
+  // });
 
   return (
     <>
@@ -53,7 +54,10 @@ const App = () => {
       <OurStatus />
       <WhyChoooseUs />
 
-      <Testimonial state={state} dispach={dispach} />
+      <StateContext>
+        <Testimonial />
+      </StateContext>
+
       <Blog />
       <Footer />
     </>
