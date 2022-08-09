@@ -64,7 +64,7 @@ const LandingContainer = () => {
         <div
           className="
         w-full h-full  flex flex-row items-center justify-center
-        2xl:w-1/2 2xl:flex 2xl:flex-row 2xl:align-start 2xl:justify-start 
+        2xl:w-1/2 2xl:flex 2xl:flex-row 2xl:align-center 2xl:justify-end 
         xl:w-1/2 xl:flex-row xl:align-start xl:justify-start
         
         right 
@@ -74,7 +74,7 @@ const LandingContainer = () => {
             src={billyImg}
             alt=""
             className={`
-          2xl:w-full
+          2xl:w-10/12 2xl:h-full
           xl:w-full
           `}
           />

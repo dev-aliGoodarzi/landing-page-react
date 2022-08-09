@@ -1,31 +1,62 @@
-// React 
-import React from 'react'
-// React 
+// React
+import React, { useReducer } from "react";
+// React
 // Components
-import LandingContainer from './Compunents/LandingContainer/LandingContainer';
-import TrustedUsers from './Compunents/TrustedUsers/TrustedUsers';
-import Services from './Compunents/Services/Services';
-import AboutSEO from './Compunents/AboutSEO/AboutSEO';
-import AboutUs from './Compunents/AboutUs/AboutUs';
-import OurStatus from './Compunents/OurStatus/OurStatus';
-import WhyChoooseUs from './Compunents/WhyChoooseUs/WhyChoooseUs';
-import Testimonial from './Compunents/Testimonial/Testimonial';
-import Blog from './Compunents/Blog/Blog';
-import Footer from './Compunents/Footer/Footer';
+import LandingContainer from "./Compunents/LandingContainer/LandingContainer";
+import TrustedUsers from "./Compunents/TrustedUsers/TrustedUsers";
+import Services from "./Compunents/Services/Services";
+import AboutSEO from "./Compunents/AboutSEO/AboutSEO";
+import AboutUs from "./Compunents/AboutUs/AboutUs";
+import OurStatus from "./Compunents/OurStatus/OurStatus";
+import WhyChoooseUs from "./Compunents/WhyChoooseUs/WhyChoooseUs";
+import Testimonial from "./Compunents/Testimonial/Testimonial";
+import Blog from "./Compunents/Blog/Blog";
+import Footer from "./Compunents/Footer/Footer";
 // Components
 
+// Contexts
+
+// Contexts
+
+// Images
+import { testimonialImage1 } from "./Compunents/ImageExporter/ImageExporter";
+// Images
+
 const App = () => {
-  return <>
-    <LandingContainer />
-    <TrustedUsers />
-    <Services />
-    <AboutSEO />
-    <AboutUs />
-    <OurStatus />
-    <WhyChoooseUs />
-    <Testimonial />
-    <Blog />
-    <Footer />
-  </>
-}
+  // const [beforeImage, setBeforeImage] = useState(testimonialImage1);
+  // const [, setCurrentUserImg] = useState("");
+
+  const reducer = (state, action) => {
+    if (action.type === "change") {
+      return {
+        ...state,
+        topImage: action.imageSrc,
+        currentUserImage: action.imageSrc,
+      };
+    } else {
+      return { state };
+    }
+  };
+
+  const [state, dispach] = useReducer(reducer, {
+    topImage: testimonialImage1,
+    currentUserImage: "",
+  });
+
+  return (
+    <>
+      <LandingContainer />
+      <TrustedUsers />
+      <Services />
+      <AboutSEO />
+      <AboutUs />
+      <OurStatus />
+      <WhyChoooseUs />
+
+      <Testimonial state={state} dispach={dispach} />
+      <Blog />
+      <Footer />
+    </>
+  );
+};
 export default App;

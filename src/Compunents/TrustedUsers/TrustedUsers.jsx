@@ -44,14 +44,13 @@ const TrustedUsers = () => {
   return (
     <div
       className={`
-      2xl:w-full  2xl:flex flex-col  2xl:items-center 2xl:justify-center 2xl:trustedUsersContainer 2xl:px-28
-      
+      2xl:w-full  2xl:flex flex-col  2xl:items-center 2xl:justify-center 2xl:px-28 2xl:pt-32 2xl:pb-48 2xl:trustedUsersContainer 
       `}
     >
       <div
         className="
       flex flex-col items-center justify-center
-      2xl:w-full 2xl:h-1/3 2xl:flex 2xl:flex-col 2xl:items-center 2xl:justify-evenly main__custom"
+      2xl:w-full 2xl:h-1/3 2xl:flex 2xl:flex-col 2xl:items-center 2xl:justify-evenly 2xl:main__custom"
       >
         <h2
           className={`font-bold ${
@@ -61,7 +60,7 @@ const TrustedUsers = () => {
           trusted by over <span style={{ color: "#CB0F4C" }}>13,041+</span>{" "}
           happy customers, including
         </h2>
-        <div className="trustedUserImagesAndPics 2xl:w-full 2xl:flex flex-row 2xl:items-center justify-between px-24">
+        <div className="trustedUserImagesAndPics 2xl:w-full 2xl:flex flex-row 2xl:items-center 2xl:mt-16 justify-between px-24">
           {trustedUsersList.map((item) => {
             return (
               <div

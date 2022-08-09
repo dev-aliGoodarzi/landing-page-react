@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import {
-  testimonialImage1,
   testimonialImage2,
   testimonialImage3,
   testimonialImage4,
@@ -9,10 +8,11 @@ import {
   testimonialImage7,
 } from "../ImageExporter/ImageExporter";
 
-const Testimonial = () => {
-  const [beforeImage, setBeforeImage] = useState(testimonialImage1);
-  const [, setCurrentUserImg] = useState("");
+const Testimonial = ({ state, dispach }) => {
+  // img Ref
   const customerImgRef = React.createRef();
+  // img Ref
+
   const imagesArray = [
     {
       id: "testimonial-Img-1",
@@ -54,7 +54,7 @@ const Testimonial = () => {
         <img
           ref={customerImgRef}
           className="w-52 h-52 mt-24"
-          src={beforeImage}
+          src={state.topImage}
           alt=""
           onClick={(e) => console.log(e.currentTarget.src)}
         />
@@ -78,9 +78,16 @@ const Testimonial = () => {
                 src={item.image}
                 alt={item.id}
                 onClick={(e) => {
-                  setBeforeImage(e.currentTarget.src);
-                  e.currentTarget.src = beforeImage;
-                  setCurrentUserImg(beforeImage);
+                  // ********************** with Reducer **********************
+                  dispach({ type: "change", imageSrc: e.currentTarget.src });
+                  e.currentTarget.src = state.topImage;
+                  // ********************** with Reducer **********************
+
+                  // ********************** without Reducer **********************
+                  // setTopImage(e.currentTarget.src);
+                  // e.currentTarget.src = topImage;
+                  // setCurrentUserImg(topImage);
+                  // ********************** without Reducer **********************
                 }}
               />
             );
