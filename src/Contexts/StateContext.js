@@ -3,17 +3,16 @@ import React, { useReducer } from "react";
 import { testimonialImage1 } from "../Compunents/ImageExporter/ImageExporter";
 // Importing Necessary Things
 
-// Creating Context
-export const State__Context = React.createContext();
-export const SetState__Context = React.createContext();
-// Creating Context
-
 // Initializing State
 const initialState = {
   topImage: testimonialImage1,
   currentUserImage: "",
 };
 // Initializing State
+
+// Creating Context
+export const ImageDispatcherContext = React.createContext(initialState);
+// Creating Context
 
 // Building Logic In Headers
 const handlers = {
@@ -36,12 +35,19 @@ const reducer = (state, action) =>
 // Warper Component => this Component Wraps The Child Component And Pass Data To Children
 export const StateContext = ({ children }) => {
   const [state, dispach] = useReducer(reducer, initialState);
+  const change = (e) => {
+    return dispach({
+      type: "change",
+      payload: {
+        topImage: e.currentTarget.src,
+        imageSrc: testimonialImage1,
+      },
+    });
+  };
   return (
-    <State__Context.Provider value={state}>
-      <SetState__Context.Provider value={dispach}>
-        {children}
-      </SetState__Context.Provider>
-    </State__Context.Provider>
+    <ImageDispatcherContext.Provider value={{ state, change }}>
+      {children}
+    </ImageDispatcherContext.Provider>
   );
 };
 // Warper Component => this Component Wraps The Child Component And Pass Data To Children

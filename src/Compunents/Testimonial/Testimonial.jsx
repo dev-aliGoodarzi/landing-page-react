@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import { SetState__Context, State__Context } from "../../Contexts/StateContext";
+import { ImageDispatcherContext } from "../../Contexts/StateContext";
 import {
-  testimonialImage1,
   testimonialImage2,
   testimonialImage3,
   testimonialImage4,
@@ -14,8 +13,10 @@ const Testimonial = () => {
   // img Ref
   const customerImgRef = React.createRef();
   // img Ref
-  const state = useContext(State__Context);
-  const setState = useContext(SetState__Context);
+  const {
+    state: { topImage },
+    change,
+  } = useContext(ImageDispatcherContext);
   const imagesArray = [
     {
       id: "testimonial-Img-1",
@@ -57,7 +58,7 @@ const Testimonial = () => {
         <img
           ref={customerImgRef}
           className="w-52 h-52 mt-24"
-          src={state.topImage}
+          src={topImage}
           alt=""
           onClick={(e) => console.log(e.currentTarget.src)}
         />
@@ -82,14 +83,8 @@ const Testimonial = () => {
                 alt={item.id}
                 onClick={(e) => {
                   // ********************** with Reducer **********************
-                  setState({
-                    type: "change",
-                    payload: {
-                      topImage: e.currentTarget.src,
-                      imageSrc: testimonialImage1,
-                    },
-                  });
-                  e.currentTarget.src = state.topImage;
+                  change(e);
+                  e.currentTarget.src = topImage;
                   // ********************** with Reducer **********************
                   // ********************** without Reducer **********************
                   // setTopImage(e.currentTarget.src);

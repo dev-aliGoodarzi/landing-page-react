@@ -1,5 +1,5 @@
 // React
-import React, { useReducer } from "react";
+import React from "react";
 // React
 // Components
 import LandingContainer from "./Compunents/LandingContainer/LandingContainer";
@@ -15,12 +15,10 @@ import Footer from "./Compunents/Footer/Footer";
 // Components
 
 // Contexts
-
+import { StateContext } from "./Contexts/StateContext";
 // Contexts
 
 // Images
-import { testimonialImage1 } from "./Compunents/ImageExporter/ImageExporter";
-import { StateContext } from "./Contexts/StateContext";
 // Images
 
 const App = () => {
