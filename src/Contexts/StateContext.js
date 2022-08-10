@@ -34,9 +34,9 @@ const reducer = (state, action) =>
 
 // Warper Component => this Component Wraps The Child Component And Pass Data To Children
 export const StateContext = ({ children }) => {
-  const [state, dispach] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
   const change = (e) => {
-    return dispach({
+    return dispatch({
       type: "change",
       payload: {
         topImage: e.currentTarget.src,
